@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<!-- saved from url=(0044)http://127.0.0.1:5500/examle2.html/logi.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    
+    <title>Login Form</title>
+    <style>
+        .form
+        {
+      
+            margin-left: 250px;
+
+        }
+        .f{
+            margin-top:  120px; ;
+            margin-left: 120px;
+            height: 380px;
+            width:300px ;
+            padding: 20px;
+            border-radius:10px ;
+            background-color: antiquewhite;
+        }
+        .sign
+        {
+            margin-left: 100px;
+            background: #1abdd7;
+            padding: 10px;
+            border-radius: 10px;
+            width: 100px;
+        }
+        .un{
+            /* padding-left: 500px; */
+            margin-left: 40px;
+            width:200px ;
+            padding: 10px;
+            border-radius: 2px;
+        }
+        .ps
+        {
+            width: 200px;
+            padding: 10px;
+        }
+        .i1
+        {
+            margin-bottom: 100px;
+        }
+        body
+        {
+            background-color:rgb(51, 166, 156) ;
+        }
+    </style>
+</head>
+<body>
+
+    
+    <div>
+
+        <form class="form">
+            <fieldset class="f">
+                <center><h2 style="color: #1664c3; font-size: 30px; "><b>Login</b></h2></center>
+                <input input="" type="text" class="un" required="required" placeholder="Email">
+                <!-- <span>Username</span> -->
+                <br><br>
+
+                <input input="" type="text" class="un" required="required" placeholder="password">
+                <!-- <span>Password</span> -->
+                <br><br>
+                
+                
+                <input type="checkbox">
+                <label> Show Password</label>
+                <br><br>
+
+                <input type="submit" class="sign" value="Sing In">
+                <br><br>
+                <a href="http://127.0.0.1:5500/examle2.html/logi.html" class="i1"> Forgot Username/Password?</a>
+                <br><br>
+                <a href="http://127.0.0.1:5500/examle2.html/logi.html" class="i2">Dont have an account? Sign Up</a>
+
+
+
+            </fieldset>
+        </form>
+    </div>
+    
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
